@@ -8,13 +8,14 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 const BasicContent = ({
     flip,
     imageSrc,
-    text
+    text,
+    height
 }) => {
     const imageColumn = (
         <Col>
-            <div className='d-flex justify-content-center align-items-center'>
+            <div className={`d-flex justify-content-center align-items-center ${height}`}>
                 <div className='BasicContent--image-wrapper shadow'>
-                <Image fluid src={imageSrc} />
+                    <Image rounded fluid src={imageSrc} />
                 </div>
             </div>
         </Col>
@@ -22,7 +23,9 @@ const BasicContent = ({
 
     const textColumn = (
         <Col>
-            {text}
+            <div className={`d-flex align-items-center ${height}`}>
+                {text}
+            </div>
         </Col>
     );
     
@@ -46,7 +49,8 @@ const BasicContent = ({
 BasicContent.defaultProps = {
     flip: false,
     imageSrc: '',
-    text: <p>Basic Content component placeholder text.</p>
+    text: <p>Basic Content component placeholder text.</p>,
+    height: 'rh-6'
 }
 
 export default BasicContent;
