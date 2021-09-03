@@ -1,0 +1,9 @@
+.NavigationBar {
+    a {
+        text-decoration: none;
+
+        button:active.NavigationButton, button:focus.NavigationButton {
+            box-shadow: none;
+        }
+    }
+}

@@ -6,21 +6,25 @@ import NavigationButton from './NavigationButton';
 //#endregion imports
 
 //#region component
-const NavigationBar = ({}) => {
+const NavigationBar = ({
+    navPaths
+}) => {
     return (
         <Navbar
             bg='dark'
-            className={'d-flex justify-content-between p-0 shadow-sm'}
+            className={'NavigationBar d-flex justify-content-between p-0 shadow-sm'}
         >
             <NavigationButton
                 text={'Sean DePottey'}
             />
-            <div class='d-flex'>
+            <div className='d-flex'>
                 <NavigationButton
                     text={'Resume'}
+                    link={navPaths['resumePage']}
                 />
                 <NavigationButton
                     text={'About Me'}
+                    link={navPaths['aboutMePage']}
                 />
             </div>
         </Navbar>

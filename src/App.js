@@ -1,19 +1,46 @@
 import logo from './logo.svg';
 
 // #region imports
-// import './App.css';
 import './scss/theme.scss';
 
-//Components
-import NavigationBar from './components/NavigationBar';
-// #endregion imports
+// Library Components
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
 
+// Custom Components
+import NavigationBar from './components/NavigationBar';
+
+// Page Components
+import ResumePage from './pages/Resume';
+import AboutMePage from './pages/AboutMe';
+// #endregion imports
 
 // #region application
 function App() {
+  const navPaths = {
+    'resumePage': '/resume', 
+    'aboutMePage': '/aboutme'
+  };
+
   return (
     <div>
-      <NavigationBar />
+      <Router>
+        <NavigationBar navPaths={navPaths} />
+        <Switch>
+          <Route path={navPaths['resumePage']}>
+            <ResumePage />
+          </Route>
+          <Route path={navPaths['aboutMePage']}>
+            <AboutMePage />
+          </Route>
+          <Route path={navPaths['/']}>
+            <ResumePage />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
