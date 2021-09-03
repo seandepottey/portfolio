@@ -1,6 +1,21 @@
 @import '../libraries/bootstrap/bootstrap.scss';
 
+@import './height-utilities';
+
 /* #region Components */
 @import '../components/NavigationBar/styles.scss';
 @import '../components/BasicContent/styles.scss';
 /* #endregion Components */
+
+// Height utility classes
+.rh- {
+    @include height-classes('min-height', 12);
+}
+
+.sh- {
+    @include height-classes('height', 12);
+}
+
+.mh- {
+    @include height-classes('max-height', 12);
+}
