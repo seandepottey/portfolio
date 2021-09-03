@@ -2,7 +2,7 @@ import React from 'react';
 
 // #region imports
 //Components
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 // #endregion imports
 
 const BasicContent = ({
@@ -12,7 +12,11 @@ const BasicContent = ({
 }) => {
     const imageColumn = (
         <Col>
-            <img src={imageSrc} />
+            <div className='d-flex justify-content-center align-items-center'>
+                <div className='BasicContent--image-wrapper shadow'>
+                <Image fluid src={imageSrc} />
+                </div>
+            </div>
         </Col>
     );
 
