@@ -139,18 +139,27 @@
                     "location": "Grand Rapids, MI"
                 },
                 "skillsets": {
-                    "Development": [
-                        {
-                            "subHeader": "Proficient with:",
-                            "value": "HTML, CSS, Javascript, SCSS, CLI, Git, React, Bootstrap, jQuery"
-                        },
-                        {
-                            "subHeader": "Familiar with:",
-                            "value": "PHP, SQL, node.js, phpMyAdmin lit-html, java, three.js, Mustache, actionscript"
-                        }
-                    ],
-                    "Design": "Figma, XD, Photoshop, Illustrator, InDesign, After Effects, Premier Pro",
-                    "Project Management": "Project scoping, Bugherd, Pivotal Tracker, ClickUp"
+                    "development": {
+                        "header": "Development",
+                        "value": [
+                            {
+                                "subHeader": "Proficient with:",
+                                "value": "HTML, CSS, Javascript, SCSS, CLI, Git, React, Bootstrap, jQuery"
+                            },
+                            {
+                                "subHeader": "Familiar with:",
+                                "value": "PHP, SQL, node.js, phpMyAdmin lit-html, java, three.js, Mustache, actionscript"
+                            }
+                        ]
+                    },
+                    "design": {
+                        "header": "Design",
+                        "value": "Figma, XD, Photoshop, Illustrator, InDesign, After Effects, Premier Pro"
+                    },
+                    "projectManagement": {
+                        "header": "Project Management",
+                        "value": "Project scoping, Bugherd, Pivotal Tracker, ClickUp"
+                    }
                 },
                 "education": [
                     {
