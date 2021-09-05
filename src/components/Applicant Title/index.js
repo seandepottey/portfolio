@@ -18,7 +18,7 @@ const ApplicantTitle = ({
                 <Image className='Applicant-image' fluid roundedCircle src={profilePic} />
             </div>
             <div className='ps-5'>
-                <h1 className='fw-bold'>{name}</h1>
+                <h1 className='fw-bold text-uppercase'>{name}</h1>
                 <h4 className={`${textColor}`}>{jobTitle}</h4>
             </div>
         </div>
