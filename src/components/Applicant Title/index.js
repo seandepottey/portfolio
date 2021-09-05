@@ -9,14 +9,17 @@ import { Image } from 'react-bootstrap';
 const ApplicantTitle = ({
     profilePic,
     name,
-    jobTitle
+    jobTitle,
+    textColor
 }) => {
     return (
-        <div className=''>
-            <Image src={profilePic} />
-            <div>
-                <h1>{name}</h1>
-                <h3>{jobTitle}</h3>
+        <div className='Applicant-title d-flex align-items-center pb-4'>
+            <div className='Applicant-image-wrapper d-flex align-items-center justify-content-center shadow'>
+                <Image className='Applicant-image' fluid roundedCircle src={profilePic} />
+            </div>
+            <div className='ps-5'>
+                <h1 className='fw-bold'>{name}</h1>
+                <h4 className={`${textColor}`}>{jobTitle}</h4>
             </div>
         </div>
     );
