@@ -18,33 +18,16 @@ const ResumePage = ({
     const timelineItems = content.timelineItems;
 
     const createTimelineContent = (item) => {
-        let bullets = [];
-        
-        const createTimelineBullet = (bulletContent) => {
-            const bullet = (
-                <li>{bulletContent.value}</li>
-            );
-            bullets.push(bullet);
-        };
-
-        const timelineItemBullets = item.bullets;
-        timelineItemBullets.forEach(bullet => createTimelineBullet(bullet));
-        let list = (
-            <ul>
-                {bullets}
-            </ul>
-        );
-
         let timelineItem = (
             <TimelineItem
-                companyName={item.jobTitle}
-                jobTitle={item.companyName}
+                jobTitle={item.jobTitle}
+                companyName={item.companyName}
+                companySite={item.companySite}
                 location={item.location}
                 timeFrame={item.timeFrame}
-                experienceItem={list}
+                bulletsContent={item.bullets}
             />
         );
-        console.log(timeline);
         timeline.push(timelineItem);
     };
     
