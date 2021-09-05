@@ -4,14 +4,27 @@ import React from 'react';
 // Components
 import { Container, Row, Col } from 'react-bootstrap';
 import ApplicantTitle from '../../components/Applicant Title';
+import TimelineItem from '../../components/TimelineItem';
+import ContactItem from '../../components/ContactItem';
 
 // Media
 import img_selfie from '../../assets/profile-pic-small.jpg';
-import TimelineItem from '../../components/TimelineItem';
+// Icons
+import at_icon from '../../assets/at_icon.svg';
+import phone_icon from '../../assets/phone_icon.svg';
+import linkedin_icon from '../../assets/linkedin_icon.svg';
+import github_icon from '../../assets/github_icon.svg';
+import house_icon from '../../assets/house_icon.svg';
 // #endregion imports
 
 const ResumePage = ({
-    content
+    content,
+    content: {
+        contactInformation,
+        skillsets,
+        education,
+        reading
+    }
 }) => {
     // #region timeline
     let timeline = [];
@@ -48,11 +61,25 @@ const ResumePage = ({
                     </Col>
                 </Row>
                 <Row className='justify-content-center'>
-                    <Col xs={6}>
+                    <Col md={6}>
+                        <h2>Experience</h2>
                         {timeline}
                     </Col>
-                    <Col xs={4}>
-
+                    <Col md={{span: 3, offset: 1}}>
+                        <div id='contactSection' className='mb-5'>
+                            <h2>Contact & Network</h2>
+                            <div className='mt-3'>
+                                <ContactItem icon={at_icon} content={contactInformation.email} />
+                                <ContactItem icon={phone_icon} content={contactInformation.phoneNumber} />
+                                <ContactItem icon={linkedin_icon} content={contactInformation.linkedIn} />
+                                <ContactItem icon={github_icon} content={contactInformation.github} />
+                                <ContactItem icon={house_icon} content={contactInformation.location} />
+                            </div>
+                        </div>
+                        <h2 className='mb-4'>Skillsets</h2>
+                        <h3 className='mb-3'>Development</h3>
+                        <h3 className='mb-3'>Design</h3>
+                        <h3 className='mb-3'>Project Management</h3>
                     </Col>
                 </Row>
             </Container>
