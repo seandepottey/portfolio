@@ -8,6 +8,7 @@
                     {
                         "jobTitle": "Experience Developer",
                         "companyName": "SDI Clarity",
+                        "companySite": "https://www.sdiclarity.com/",
                         "location": "Grand Rapids, MI",
                         "timeFrame": "Aug 2018 - Now",
                         "bullets": [
@@ -31,6 +32,7 @@
                     {
                         "jobTitle": "Web Designer & Developer",
                         "companyName": "Andronaco Industries",
+                        "companySite": "https://www.andronaco.com/",
                         "location": "Kentwood, MI",
                         "timeFrame": "Feb 2017 - Aug 2018",
                         "bullets": [
@@ -64,19 +66,20 @@
                         "timeFrame": "May 2016 - Feb 2017",
                         "bullets": [
                             {
-                                "value": "Programmed website for strategic brand development company based out of Chicago. Built with bootstrap and jquery."
+                                "value": "Programmed website for strategic brand development company based out of Chicago using bootstrap and jquery"
                             },
                             {
                                 "value": "Food menu design for Bier De Mac brewery in Mackinaw city"
                             },
                             {
-                                "value": "Continued work with Blue Pic Studios."
+                                "value": "Continued work with Blue Pic Studios"
                             }
                         ]
                     },
                     {
                         "jobTitle": "Intern",
                         "companyName": "Blue Pic Studios",
+                        "companySite": "https://www.bluepicstudios.com/",
                         "location": "MI",
                         "timeFrame": "Feb 2016 - April 2016",
                         "bullets": [
@@ -103,6 +106,7 @@
                     {
                         "jobTitle": "Graphic Designer",
                         "companyName": "Econoline",
+                        "companySite": "https://www.sandblasting.com/",
                         "location": "Grand Haven, MI",
                         "timeFrame": "Part Time 2013-2015",
                         "bullets": [
@@ -116,10 +120,22 @@
                     }
                 ],
                 "contactInformation": {
-                    "email": "seandepottey@gmail.com",
-                    "pNumber": "616.502.6776",
-                    "linkedIn": "/in/seandepottey",
-                    "github": "/seandepottey",
+                    "email": {
+                        "value": "seandepottey@gmail.com",
+                        "link": "mailto: seandepottey@gmail.com"
+                    },
+                    "phoneNumber": {
+                        "value": "616.502.6776",
+                        "link": "tel:+16165026776"
+                    },
+                    "linkedIn": {
+                        "value": "/in/seandepottey",
+                        "link": "https://www.linkedin.com/in/seandepottey/"
+                    },
+                    "github": {
+                        "value": "/seandepottey",
+                        "link": "https://github.com/seandepottey/"
+                    },
                     "location": "Grand Rapids, MI"
                 },
                 "skillsets": {
