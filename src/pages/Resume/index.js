@@ -6,6 +6,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import ApplicantTitle from '../../components/Applicant Title';
 import TimelineItem from '../../components/TimelineItem';
 import ContactItem from '../../components/ContactItem';
+import SkillsSection from '../../components/SkillsSection';
 
 // Media
 import img_selfie from '../../assets/profile-pic-small.jpg';
@@ -77,9 +78,9 @@ const ResumePage = ({
                             </div>
                         </div>
                         <h2 className='mb-4'>Skillsets</h2>
-                        <h3 className='mb-3'>Development</h3>
-                        <h3 className='mb-3'>Design</h3>
-                        <h3 className='mb-3'>Project Management</h3>
+                        <SkillsSection content={skillsets.development} />
+                        <SkillsSection content={skillsets.design} />
+                        <SkillsSection content={skillsets.projectManagement} />
                     </Col>
                 </Row>
             </Container>
