@@ -5,16 +5,18 @@ import React from 'react';
 import BasicContent from '../../components/BasicContent';
 
 // Media
-import Selfie from '../../assets/profile-pic-small.jpg';
-import Raven from '../../assets/raven.jpg';
+import img_selfie from '../../assets/profile-pic-small.jpg';
+import img_raven from '../../assets/raven.jpg';
 // #endregion imports
 
-const AboutMePage = () => {
+const AboutMePage = ({
+    content
+}) => {
     return (
         <div id='about-me-page'>
             <section id='personal-section'>
                 <BasicContent
-                    imageSrc={Selfie}
+                    imageSrc={img_selfie}
                 >
 
                 </BasicContent>
@@ -22,7 +24,7 @@ const AboutMePage = () => {
             <section id='raven-section'>
                 <BasicContent
                     flip
-                    imageSrc={Raven}
+                    imageSrc={img_raven}
                 >
 
                 </BasicContent>
