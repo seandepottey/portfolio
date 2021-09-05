@@ -1,7 +1,7 @@
 import React from 'react';
 
 // #region imports
-//Components
+// Components
 import { Container, Row, Col, Image } from 'react-bootstrap';
 // #endregion imports
 

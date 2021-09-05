@@ -16,7 +16,13 @@ import NavigationBar from './components/NavigationBar';
 // Page Components
 import ResumePage from './pages/Resume';
 import AboutMePage from './pages/AboutMe';
+
+// Content
+import LocalizedStrings from "localized-strings";
+import jsonContent from './content.json';
 // #endregion imports
+
+const content = new LocalizedStrings(jsonContent);
 
 // #region application
 function App() {
@@ -25,19 +31,21 @@ function App() {
     'aboutMePage': '/aboutme'
   };
 
+  const resumePage = <ResumePage content={content.resumePage.applicant} />;
+
   return (
     <div>
       <Router>
         <NavigationBar navPaths={navPaths} />
         <Switch>
           <Route path={navPaths['resumePage']}>
-            <ResumePage />
+            {resumePage}
           </Route>
           <Route path={navPaths['aboutMePage']}>
-            <AboutMePage />
+            <AboutMePage content={content.aboutMePage} />
           </Route>
           <Route path={navPaths['/']}>
-            <ResumePage />
+            {resumePage}
           </Route>
         </Switch>
       </Router>
