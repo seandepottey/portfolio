@@ -16,6 +16,7 @@ import phone_icon from '../../assets/phone_icon.svg';
 import linkedin_icon from '../../assets/linkedin_icon.svg';
 import github_icon from '../../assets/github_icon.svg';
 import house_icon from '../../assets/house_icon.svg';
+import EducationSection from '../../components/Education';
 // #endregion imports
 
 const ResumePage = ({
@@ -51,22 +52,18 @@ const ResumePage = ({
     return (
         <div>
             <Container className='py-5'>
+                <ApplicantTitle 
+                    profilePic={img_selfie} 
+                    name={content.name}
+                    jobTitle='Front End Developer // UX // UI'
+                    textColor={'text-secondary'}
+                />
                 <Row className='justify-content-center'>
-                    <Col md={10}>
-                        <ApplicantTitle 
-                            profilePic={img_selfie} 
-                            name={content.name}
-                            jobTitle='Front End Developer // UX // UI'
-                            textColor={'text-secondary'}
-                        />
-                    </Col>
-                </Row>
-                <Row className='justify-content-center'>
-                    <Col md={6}>
+                    <Col lg={6}>
                         <h2>Experience</h2>
                         {timeline}
                     </Col>
-                    <Col md={{span: 3, offset: 1}}>
+                    <Col lg={{span: 3, offset: 1}}>
                         <div id='contactSection' className='mb-5'>
                             <h2>Contact & Network</h2>
                             <div className='mt-3'>
@@ -77,10 +74,13 @@ const ResumePage = ({
                                 <ContactItem icon={house_icon} content={contactInformation.location} />
                             </div>
                         </div>
-                        <h2 className='mb-4'>Skillsets</h2>
-                        <SkillsSection content={skillsets.development} />
-                        <SkillsSection content={skillsets.design} />
-                        <SkillsSection content={skillsets.projectManagement} />
+                        <div className='mb-5'>
+                            <h2 className='mb-4'>Skillsets</h2>
+                            <SkillsSection content={skillsets.development} />
+                            <SkillsSection content={skillsets.design} />
+                            <SkillsSection content={skillsets.projectManagement} />
+                        </div>
+                        <EducationSection content={education} />
                     </Col>
                 </Row>
             </Container>
