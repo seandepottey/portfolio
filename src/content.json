@@ -164,6 +164,7 @@
                 "education": [
                     {
                         "schoolName": "Kendall College of Art & Design",
+                        "link": "https://kcad.ferris.edu/",
                         "degree": "BFA in Digital Media",
                         "focus": "Focus in Interactive Design",
                         "years": "2012-2016"
