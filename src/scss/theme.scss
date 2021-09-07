@@ -1,6 +1,8 @@
 @import '../libraries/bootstrap/bootstrap.scss';
 
+@import './elements';
 @import './height-utilities';
+
 
 /* #region Components */
 @import '../components/NavigationBar/styles.scss';
@@ -8,6 +10,8 @@
 @import '../components/Applicant\ Title/styles.scss';
 @import '../components/TimelineItem/styles.scss';
 @import '../components/ContactItem/styles.scss';
+@import '../components/SkillsSection/styles.scss';
+@import '../components/Education/styles.scss';
 /* #endregion Components */
 
 // Height utility classes
