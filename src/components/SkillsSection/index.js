@@ -7,14 +7,13 @@ const SkillsSection = ({
         value
     }
 }) => {
-    let skillsList = <p>{content.value}</p>;
+    let skillsList = [];
     const createContentNodes = (item) => {
-        console.log(item);
         if(item.subHeader) {
             let subheader = <h6 className='mb-1 text-secondary'>{item.subHeader}</h6>;
             skillsList.push(subheader);
         }
-        let listNode = <p className=''>{item.value}</p>;
+        let listNode = <p>{item.value}</p>;
         skillsList.push(listNode);
     };
 
@@ -22,6 +21,8 @@ const SkillsSection = ({
     if(detectArray) {
         skillsList = [];
         value.forEach(item => createContentNodes(item));
+    } else {
+        createContentNodes(content);
     }
 
     return (
