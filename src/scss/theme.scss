@@ -1,5 +1,7 @@
 @import '../libraries/bootstrap/bootstrap.scss';
 
+@import './cusotm-variables.scss';
+@import './mixins.scss';
 @import './elements';
 @import './height-utilities';
 
@@ -15,15 +17,15 @@
 /* #endregion Components */
 
 // Height utility classes
-.rh- {
-    @include height-classes('min-height', 12);
-    //First argument is height property, the second is a base number you can read more inside of the height-utilities.scss file 
+.rh {
+    @include height-classes-breakpoints('min-height', 12);
+    //First argument is height property, the second is a base number you can read more inside of the height-utilities.scss file.
 }
 
-.sh- {
-    @include height-classes('height', 12);
+.sh {
+    @include height-classes-breakpoints('height', 12);
 }
 
-.mh- {
-    @include height-classes('max-height', 12);
+.mh {
+    @include height-classes-breakpoints('max-height', 12);
 }

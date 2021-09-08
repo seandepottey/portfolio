@@ -7,7 +7,7 @@
     y = Breakpoint size: xs, sm, md, lg, xl, xx, mx - xs excludes #{y} and is written as #{x}-#{z}.
     z = Height of row: number in the range of 1-12 - represents the portion of the view height using a base of 12.
 
-    property: property type choosen by $heigthProperty
+    property: property type choosen by $heightProperty
     value: css calc of height minus a portion of the nav
 
     .#{x}-#{y}-#{z} {
@@ -15,9 +15,10 @@
     }
 */
 
+// This should be moved to a variables type settings file once there's engough to justify it.
 $nav-height: 58px;
 
-// Size map based off of bootstrap breakpoints with larger extensions (Could be updated to use bootstraps scss breakpoints variable by using default)
+// Size map based off of bootstrap breakpoints with larger extensions (Could be updated to use bootstraps scss breakpoints variable by using default) this map can also be adjusted to reduce or extend the amount of css output. Eventually it may be a good idea to build the individual classes as mixins so that only the classes used are output to the build.
 $breakpoints: (
     sm: 576px,
     md: 768px,
@@ -27,26 +28,26 @@ $breakpoints: (
     mx: 1920px
 );
 
-@mixin height-classes ($heightProperty, $base) {
+@mixin height-classes ($heightProperty, $base, $breakpoint) {
     $rowBase: $base;
     @while $rowBase > 0 {
         $rowPercent: $rowBase / $base;
-        // $navAccommodation: $nav-height - ($nav-height * $rowPercent);
         $navAccommodation: ($nav-height * $rowPercent);
         $rowHeight: calc(#{$rowPercent * 100}vh - #{$navAccommodation});
 
-        &#{$rowBase} {
+        &#{$breakpoint}#{$rowBase} {
             #{$heightProperty}: $rowHeight;
         }
 
-        @each $breakpoint, $size in $breakpoints {
-            @media only screen and (min-width: $size) {
-                &-#{$breakpoint}-#{$rowBase} {
-                    #{$heightProperty}: $rowHeight;
-                }
-            }
-        }
-
         $rowBase: $rowBase - 1;
+    }
+}
+
+@mixin height-classes-breakpoints ($heightProperty, $base) {
+    @include height-classes($heightProperty, $base, '-');
+    @each $breakpoint, $size in $breakpoints {
+        @media only screen and (min-width: $size) {
+            @include height-classes($heightProperty, $base, '-#{$breakpoint}-');
+        }
     }
 }
