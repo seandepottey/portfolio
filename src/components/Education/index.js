@@ -7,7 +7,6 @@ const SchoolInformation = ({
     years,
     link
 }) => {
-
     if(link) {
         schoolName = <a target='_blank' href={link}>{schoolName}</a>;
     }
@@ -25,9 +24,7 @@ const SchoolInformation = ({
 
 const EducationSection = ({content}) => {
     let schools = [];
-    console.log(content);
     content.forEach(school => schools.push(SchoolInformation(school)));
-
     return (
         <div id='EducationSection'>
             <h2>Education</h2>
