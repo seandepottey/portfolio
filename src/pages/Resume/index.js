@@ -81,6 +81,7 @@ const ResumePage = ({
                             <SkillsSection content={skillsets.projectManagement} />
                         </div>
                         <EducationSection content={education} />
+                        <SkillsSection content={reading} />
                     </Col>
                 </Row>
             </Container>
