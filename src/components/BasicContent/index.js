@@ -1,30 +1,57 @@
 import React from 'react';
 
 // #region imports
+// Hooks
+import { useWindowSize } from '../../js/hooks';
 // Components
 import { Container, Row, Col, Image } from 'react-bootstrap';
 // #endregion imports
 
+/*
+    Component documentation at bottom of the file
+
+*/
+
 const BasicContent = ({
     flip,
     imageSrc,
-    text,
-    height
+    height,
+    imageCol,
+    contentCol,
+    children
 }) => {
+    let windowWidth = useWindowSize().width;
+    let lineBreak = <></>;
+
+    if(windowWidth <= 576) {
+        lineBreak = <hr style={{width: '80%'}} />
+    }
+
     const imageColumn = (
-        <Col>
-            <div className={`d-flex justify-content-center align-items-center ${height}`}>
-                <div className='BasicContent--image-wrapper shadow'>
-                    <Image rounded fluid src={imageSrc} />
+        <Col
+            key='imageCol'
+            {...imageCol}
+            xs={12}
+            >
+            <div className={`d-flex justify-content-center align-items-center mb-2 mb-sm-0 ${height} py-3`}>
+                <div className='BasicContent--image-frame position-relative'>
+                    <div className='Image-offset' />
+                    <div className='Image-wrapper'>
+                        <Image className='position-relative' rounded fluid src={imageSrc} />
+                    </div>
                 </div>
             </div>
         </Col>
     );
 
     const textColumn = (
-        <Col>
-            <div className={`d-flex align-items-center ${height}`}>
-                {text}
+        <Col
+            key='textCol' 
+            {...contentCol}
+            xs={10}
+            >
+            <div className={`d-flex align-items-center mb-5 mb-md-4 mb-lg-0 ${height} py-3`}>
+                {children}
             </div>
         </Col>
     );
@@ -36,10 +63,11 @@ const BasicContent = ({
     }
 
     return(
-        <div class='BasicContent'>
+        <div className='BasicContent'>
             <Container>
-                <Row>
+                <Row className={'justify-content-center'}>
                     {columns}
+                    {lineBreak}
                 </Row>
             </Container>
         </div>
@@ -50,7 +78,12 @@ BasicContent.defaultProps = {
     flip: false,
     imageSrc: '',
     text: <p>Basic Content component placeholder text.</p>,
-    height: 'rh-6'
+    height: 'rh-2 rh-lg-6'
 }
 
 export default BasicContent;
+
+/*
+    @prop imageCol: passed as object written as Column properties
+
+*/
