@@ -172,16 +172,16 @@
                 ],
                 "reading": {
                     "subHeader": "Continued Reading:",
-                    "books": "Javascript: The Good Parts, Atomic Design, The Clean Coder, Algorithms"
+                    "value": "Javascript: The Good Parts, Atomic Design, The Clean Coder, Algorithms"
                 }
             }
         },
         "aboutMePage": {
             "personalOverview": {
-                "value": "Personal section"
+                "value": "Hi! My name is Sean DePottey. I'm a passionate, driven, and creative team player. I like to dig deep into big problems to find optimal solutions for software, deisgn, and process. I care about my work as well as the people I work with. A business is only as good as it's people. Beyond work I just got my first pup which you can read more about below. When I'm not taking care of Raven I like to oil paint, woodwork, program, or excercise."
             },
             "ravenSection": {
-                "value": "Raven section"
+                "value": "Hi! My name is Raven and I'm a black lab. I like sticks, treats, exploring new things, and occasionally biting ankles. I learned to play fetch before I was 10 weeks old! I'm just a pup now but when I grow up I want to hunt ducks."
             }
         }
     }
