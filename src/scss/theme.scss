@@ -1,0 +1,31 @@
+@import '../libraries/bootstrap/bootstrap.scss';
+
+@import './cusotm-variables.scss';
+@import './mixins.scss';
+@import './elements';
+@import './height-utilities';
+
+
+/* #region Components */
+@import '../components/NavigationBar/styles.scss';
+@import '../components/BasicContent/styles.scss';
+@import '../components/Applicant\ Title/styles.scss';
+@import '../components/TimelineItem/styles.scss';
+@import '../components/ContactItem/styles.scss';
+@import '../components/SkillsSection/styles.scss';
+@import '../components/Education/styles.scss';
+/* #endregion Components */
+
+// Height utility classes
+.rh {
+    @include height-classes-breakpoints('min-height', 12);
+    //First argument is height property, the second is a base number you can read more inside of the height-utilities.scss file.
+}
+
+.sh {
+    @include height-classes-breakpoints('height', 12);
+}
+
+.mh {
+    @include height-classes-breakpoints('max-height', 12);
+}

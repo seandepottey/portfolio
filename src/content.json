@@ -1,0 +1,188 @@
+{
+    "en-US": {
+        "resumePage": {
+            "applicant": {
+                "name": "Sean DePottey",
+                "jobTitle": "Front End Developer // UX // UI",
+                "timelineItems": [
+                    {
+                        "jobTitle": "Experience Developer",
+                        "companyName": "SDI Clarity",
+                        "companySite": "https://www.sdiclarity.com/",
+                        "location": "Grand Rapids, MI",
+                        "timeFrame": "Aug 2018 - Now",
+                        "bullets": [
+                            {
+                                "value": "UX/UI design & development of a web based application that produces React based HTML responsive e-learning courses"
+                            },
+                            {
+                                "value": "SCSS architecture for application and course design"
+                            },
+                            {
+                                "value": "Application user flows & wire frames"
+                            },
+                            {
+                                "value": "Wrote supporting documentation on application"
+                            },
+                            {
+                                "value": "Project scoping for application features through writing tickets, applying sprint points, and assessing risk "
+                            }
+                        ]
+                    },
+                    {
+                        "jobTitle": "Web Designer & Developer",
+                        "companyName": "Andronaco Industries",
+                        "companySite": "https://www.andronaco.com/",
+                        "location": "Kentwood, MI",
+                        "timeFrame": "Feb 2017 - Aug 2018",
+                        "bullets": [
+                            {
+                                "value": "Programmed websites working in html, css, javascript & php"
+                            },
+                            {
+                                "value": "Database entry through Navicat and phpMyAdmin"
+                            },
+                            {
+                                "value": "Programmed product search functionality with PHP and SQL from database"
+                            },
+                            {
+                                "value": "Responsive website design, wire frames & mockups"
+                            },
+                            {
+                                "value": "Website & product brochure maintenance"
+                            },
+                            {
+                                "value": "Illustration & character design for marketing purposes"
+                            },
+                            {
+                                "value": "SEO and Google analytics for all company websites"
+                            }
+                        ]
+                    },
+                    {
+                        "jobTitle": "Designer & Developer",
+                        "companyName": "Freelance",
+                        "location": "MI",
+                        "timeFrame": "May 2016 - Feb 2017",
+                        "bullets": [
+                            {
+                                "value": "Programmed website for strategic brand development company based out of Chicago using bootstrap and jquery"
+                            },
+                            {
+                                "value": "Food menu design for Bier De Mac brewery in Mackinaw city"
+                            },
+                            {
+                                "value": "Continued work with Blue Pic Studios"
+                            }
+                        ]
+                    },
+                    {
+                        "jobTitle": "Intern",
+                        "companyName": "Blue Pic Studios",
+                        "companySite": "https://www.bluepicstudios.com/",
+                        "location": "MI",
+                        "timeFrame": "Feb 2016 - April 2016",
+                        "bullets": [
+                            {
+                                "value": "Video Editing"
+                            },
+                            {
+                                "value": "Motion Graphics"
+                            },
+                            {
+                                "value": "Storyboarding"
+                            },
+                            {
+                                "value": "Character Design"
+                            },
+                            {
+                                "value": "Synched multi-cam setup with audio"
+                            },
+                            {
+                                "value": "Designed & typeset a series of ads for furniture"
+                            }
+                        ]
+                    },
+                    {
+                        "jobTitle": "Graphic Designer",
+                        "companyName": "Econoline",
+                        "companySite": "https://www.sandblasting.com/",
+                        "location": "Grand Haven, MI",
+                        "timeFrame": "Part Time 2013-2015",
+                        "bullets": [
+                            {
+                                "value": "Photographed & edited the entire catalog of parts & machines"
+                            },
+                            {
+                                "value": "Sand Blaster manual design, typesetting & diagram drawing"
+                            }
+                        ]
+                    }
+                ],
+                "contactInformation": {
+                    "email": {
+                        "value": "seandepottey@gmail.com",
+                        "link": "mailto: seandepottey@gmail.com"
+                    },
+                    "phoneNumber": {
+                        "value": "616.502.6776",
+                        "link": "tel:+16165026776"
+                    },
+                    "linkedIn": {
+                        "value": "/in/seandepottey",
+                        "link": "https://www.linkedin.com/in/seandepottey/"
+                    },
+                    "github": {
+                        "value": "/seandepottey",
+                        "link": "https://github.com/seandepottey/"
+                    },
+                    "location": "Grand Rapids, MI"
+                },
+                "skillsets": {
+                    "development": {
+                        "header": "Development",
+                        "value": [
+                            {
+                                "subHeader": "Proficient with:",
+                                "value": "HTML, CSS, Javascript, SCSS, CLI, Git, React, Bootstrap, jQuery"
+                            },
+                            {
+                                "subHeader": "Familiar with:",
+                                "value": "PHP, SQL, node.js, phpMyAdmin lit-html, java, three.js, Mustache, actionscript"
+                            }
+                        ]
+                    },
+                    "design": {
+                        "header": "Design",
+                        "value": "Figma, XD, Photoshop, Illustrator, InDesign, After Effects, Premier Pro"
+                    },
+                    "projectManagement": {
+                        "header": "Project Management",
+                        "value": "Project scoping, Bugherd, Pivotal Tracker, ClickUp"
+                    }
+                },
+                "education": [
+                    {
+                        "schoolName": "Kendall College of Art & Design",
+                        "link": "https://kcad.ferris.edu/",
+                        "degree": "BFA in Digital Media",
+                        "focus": "Focus in Interactive Design",
+                        "years": "2012-2016"
+                    }
+                ],
+                "reading": {
+                    "subHeader": "Continued Reading:",
+                    "value": "Javascript: The Good Parts, Atomic Design, The Clean Coder, Algorithms"
+                }
+            }
+        },
+        "aboutMePage": {
+            "personalOverview": {
+                "value": "Hi! My name is Sean DePottey. I'm a passionate, driven, and creative team player. I like to dig deep into big problems to find optimal solutions for software, deisgn, and process. I care about my work as well as the people I work with. A business is only as good as it's people. Beyond work I just got my first pup which you can read more about below. When I'm not taking care of Raven I like to oil paint, woodwork, program, or excercise."
+            },
+            "ravenSection": {
+                "value": "Hi! My name is Raven and I'm a black lab. I like sticks, treats, exploring new things, and occasionally biting ankles. I learned to play fetch before I was 10 weeks old! I'm just a pup now but when I grow up I want to hunt ducks."
+            }
+        }
+    }
+}
