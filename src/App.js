@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-
 // #region imports
 import './scss/theme.scss';
 
